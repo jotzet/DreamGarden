@@ -5,6 +5,9 @@ export const ModeToggle = () => {
   const { mode, setMode } = useColorScheme();
   return (
     <Button
+    sx={{
+      marginTop: 1,
+    }}
       variant="outlined"
       color="neutral"
       onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}

@@ -1,19 +1,27 @@
 import { Container, Button } from "@mui/joy";
-
+import Divider from "@mui/joy/Divider";
+import { Link } from "react-router-dom";
 
 export const TopMenu = () => {
   return (
+    <Container  sx={{ marginBottom: "50px"}}>
       <Container
         sx={{
-          height: "60px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          margin: "4px 0 4px 0",
         }}
       >
-        <Button color='primary'>Add a dream</Button>
-        <Button>My dreams</Button>
-        <Button>My garden</Button>
+        <Button>Add a dream</Button>
+        <Link to="">
+          <Button>My dreams</Button>
+        </Link>
+        <Link to="/mygarden">
+          <Button>My garden</Button>
+        </Link>
       </Container>
+      <Divider />
+    </Container>
   );
 };
