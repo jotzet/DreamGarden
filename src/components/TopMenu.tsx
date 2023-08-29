@@ -14,7 +14,7 @@ export const TopMenu = () => {
         }}
       >
         <Button>Add a dream</Button>
-        <Link to="">
+        <Link to="/mydreams">
           <Button>My dreams</Button>
         </Link>
         <Link to="/mygarden">

@@ -4,17 +4,12 @@ import Divider from "@mui/joy/Divider";
 
 export const Footer = () => {
   return (
-    <Container
-    sx={{
-      position: "fixed",
-      bottom: 5,
-      left: 0,
-    }}>
+    <Container>
     <Divider />
     <Container
       sx={{
         display: "flex",
-        justifyContent: "right",
+        justifyContent: "flex-end",
       }}
     >
       <ModeToggle />

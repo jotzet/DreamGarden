@@ -4,6 +4,7 @@ import Button from '@mui/joy/Button';
 export const ModeToggle = () => {
   const { mode, setMode } = useColorScheme();
   return (
+
     <Button
     sx={{
       marginTop: 1,
@@ -15,4 +16,5 @@ export const ModeToggle = () => {
       {mode === 'dark' ? 'Turn light' : 'Turn dark'}
     </Button>
   );
+  
 }
